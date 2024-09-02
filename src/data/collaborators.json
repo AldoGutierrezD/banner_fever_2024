@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Harto Fuego",
+        "link": "https://www.instagram.com/hartofuego",
+        "image": "harto_fuego.png"
+    },
+    {
+        "id": 2,
+        "name": "Chava Tattoo",
+        "link": "#",
+        "image": "salvador_hernandez.png"
+    },
+    {
+        "id": 3,
+        "name": "Stock de Papel",
+        "link": "https://www.instagram.com/stockdepapel",
+        "image": "stock_papel.png"
+    },
+    {
+        "id": 4,
+        "name": "Torre Andrade",
+        "link": "https://www.instagram.com/torre.andrade",
+        "image": "torre_andrade.png"
+    }
+]

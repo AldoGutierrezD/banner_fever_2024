@@ -1,0 +1,149 @@
+---
+import banners from "../data/banners_2023.json";
+---
+
+<section
+    id="edicion_2023"
+    class="w-full border-black border-x-8 border-t-4 border-b-8"
+>
+    <div class="w-full border-black border-b-8 py-2">
+        <h4
+            class="font-impact text-center text-6xl md:text-[120px] xl:text-[156px]"
+        >
+            EDICION 2023
+        </h4>
+    </div>
+
+    <div class="w-full flex flex-col xl:flex-row border-black border-b-8">
+        <aside class="w-full xl:w-1/3 flex justify-center items-center p-2">
+            <img
+                src="../../public/images/edition_2023/logo_2023.png"
+                alt=""
+                class="w-60 xl:w-96 h-auto"
+            />
+        </aside>
+        <aside class="w-full xl:w-1/3 border-black border-y-8 xl:border-x-8">
+            <div id="videoContainer" class="relative">
+                <video id="videoResume" class="opacity-70">
+                    <source
+                        src="../../public/videos/banner_fever_2023_resume.mp4"
+                    />
+                </video>
+                <div
+                    class="custom-controls absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]"
+                >
+                    <button id="playButton" class="play-btn">
+                        <img
+                            src="../../public/images/icons/play-circle.png"
+                            class="w-24"
+                        />
+                    </button>
+                </div>
+            </div>
+        </aside>
+        <aside class="w-full xl:w-1/3 flex justify-center items-center p-2">
+            <img
+                src="../../public/images/edition_2023/logo_2023.png"
+                alt=""
+                class="w-60 xl:w-96 h-auto"
+            />
+        </aside>
+    </div>
+
+    <div class="w-full border-black border-b-8 bg-black">
+        <div class="w-full flex flex-wrap justify-center">
+            {
+                banners.map((element) => {
+                    return (
+                        <div
+                            class="banner w-1/2 md:w-1/3 xl:w-1/6 h-60 md:h-80 bg-black"
+                            data-id={element.id}
+                            data-instagram={element.instagram}
+                        >
+                            <div class="w-full h-5/6">
+                                <img
+                                    src={`../../public/images/banners_2023/${element.id}.jpg`}
+                                    alt=""
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div class="w-full h-1/6 py-2 flex justify-start items-center">
+                                <a
+                                    href={`https://www.instagram.com/${element.instagram}`}
+                                    target="_blank"
+                                    class="font-montserrat font-light underline underline-offset-4 text-white"
+                                    style="text-decoration-thickness: 1px;"
+                                >
+                                    @{element.instagram}
+                                </a>
+                            </div>
+                        </div>
+                    );
+                })
+            }
+        </div>
+    </div>
+</section>
+
+<style>
+    @keyframes scrollToRight {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @keyframes scrollToLeft {
+        0% {
+            transform: translateX(-50%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .banner-column:nth-child(1),
+    .banner-column:nth-child(3) {
+        animation: scrollToRight 40s linear infinite;
+    }
+
+    .banner-column:nth-child(2),
+    .banner-column:nth-child(4) {
+        animation: scrollToLeft 40s linear infinite;
+    }
+</style>
+
+<script>
+    //VIDEO
+    const video = document.getElementById("videoResume");
+    const playButton = document.getElementById("playButton");
+    const iconPlay = playButton.querySelector("img");
+
+    playButton.addEventListener("click", () => {
+        if (video.paused) {
+            video.classList.remove("opacity-70");
+            playButton.innerHTML = "";
+            video.play();
+        }
+    });
+
+    video.addEventListener("click", () => {
+        if (!video.paused) {
+            video.classList.add("opacity-70");
+            video.pause();
+            playButton.appendChild(iconPlay);
+        }
+    });
+
+    //BANNER MODAL
+    const bannerElements = document.querySelectorAll(".banner");
+
+    bannerElements.forEach((banner) => {
+        banner.addEventListener("click", () => {
+            let id = banner.dataset.id;
+            let instagram = banner.dataset.instagram;
+        });
+    });
+</script>

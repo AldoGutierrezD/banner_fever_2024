@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "CHARLA SOBRE BANNERS",
+        "description": "FAVIO MORALES",
+        "date": "5 y 6 OCT.",
+        "subtitle": "TALLER DE PRODUCCION DE BANNERS",
+        "image": "favio_morales.png"
+    },
+    {
+        "id": 2,
+        "title": "PRESENTACION EN VIVO SOBRE LA TECNICA DEL TURFTING",
+        "description": "JACQUELINE LANDEROS",
+        "date": "DIA DEL EVENTO",
+        "subtitle": "DEMOSTRACION DE TURFTING",
+        "image": "turfting.png"
+    },
+    {
+        "id": 3,
+        "title": "PRACTICA EN VIVO SOBRE LA TECNICA DE AEROGRAFIA",
+        "description": "PROXIMAMENTE",
+        "date": "DIA DEL EVENTO",
+        "subtitle": "DEMOSTRACION DE AEROGRAFO",
+        "image": "aerografia.png"
+    },
+    {
+        "id": 4,
+        "title": "PINCHADA DE DISCOS DE VINIL",
+        "description": "DJ NEAR FT DJ RAYO DE JALISCO",
+        "date": "DIA DEL EVENTO",
+        "subtitle": "DJ NEAR FT DJ RAYO DE JALISCO",
+        "image": "near_rayo.png"
+    },
+    {
+        "id": 5,
+        "title": "MATERIAL DE DIBUJO, TATUAJE, PINTURA, Y MAS",
+        "description": "MOLOTOV, PRISMA COLOR, DINAMYC, RADIANT",
+        "date": "DIA DEL EVENTO",
+        "subtitle": "RIFA DE MATERIAL DE ARTE Y TATUAJE",
+        "image": "rifa_materiales.png"
+    },
+    {
+        "id": 6,
+        "title": "DESCUENTOS EN MATERIALES PARA LA PRODUCCION DE BANNERS",
+        "description": "HERMANOS ALDAMA 206, CENTRO",
+        "date": "HOY - VIERNES 8 DE NOVIEMBRE",
+        "subtitle": "DESCUENTOS EN STOCK DE PAPEL",
+        "image": "stock_papel.png"
+    }
+]
