@@ -6,84 +6,116 @@ import banners from "../data/banners_2023.json";
     id="edicion_2023"
     class="w-full border-black border-x-8 border-t-4 border-b-8"
 >
-    <div class="w-full border-black border-b-8 py-2">
-        <h4
-            class="font-impact text-center text-6xl md:text-[120px] xl:text-[156px]"
-        >
-            EDICION 2023
-        </h4>
+    <div class="w-full h-16 px-4 bg-black flex justify-between items-center">
+        <span class="text-white text-2xl">+</span>
+        <span class="text-white text-2xl">+</span>
+        <span class="text-white text-2xl">+</span>
     </div>
 
-    <div class="w-full flex flex-col xl:flex-row border-black border-b-8">
-        <aside class="w-full xl:w-1/3 flex justify-center items-center p-2">
-            <img
-                src="../../public/images/edition_2023/logo_2023.png"
-                alt="Logotipo de Banner Fever Edición 2023"
-                class="w-60 xl:w-96 h-auto"
-                title="Logotipo de Banner Fever Edición 2023"
-            />
-        </aside>
-        <aside class="w-full xl:w-1/3 border-black border-y-8 xl:border-x-8">
-            <div id="videoContainer" class="relative">
-                <video id="videoResume" class="opacity-70">
-                    <source
-                        src="../../public/videos/banner_fever_2023_resume.mp4"
-                    />
-                </video>
+    <div class="w-full">
+        <div class="w-full border-black border-b-8 py-2">
+            <h4
+                class="font-impact text-center text-6xl md:text-[120px] xl:text-[156px]"
+            >
+                EDICION 2023
+            </h4>
+        </div>
+
+        <div class="w-full flex flex-col xl:flex-row border-black border-b-8">
+            <aside
+                class="w-full xl:w-1/3 flex flex-col justify-center items-center gap-8"
+            >
                 <div
-                    class="custom-controls absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]"
+                    class="w-full h-1/3 flex justify-start items-center gap-3 p-4"
                 >
-                    <button id="playButton" class="play-btn">
-                        <img
-                            src="../../public/images/icons/play-circle.png"
-                            class="w-24"
-                        />
-                    </button>
+                    <span class="font-impact text-7xl md:text-[128px]">+60</span
+                    >
+                    <p class="font-montserrat text-xl">expositores</p>
                 </div>
-            </div>
-        </aside>
-        <aside class="w-full xl:w-1/3 flex justify-center items-center p-2">
-            <img
-                src="../../public/images/edition_2023/logo_2023.png"
-                alt="Logotipo de Banner Fever Edición 2023"
-                class="w-60 xl:w-96 h-auto"
-                title="Logotipo de Banner Fever Edición 2023"
-            />
-        </aside>
-    </div>
+                <div
+                    class="w-full h-1/3 flex justify-center items-center border-black border-y-4 p-6"
+                >
+                    <p class="font-montserrat">
+                        Banner Fever nació de la idea de brindar un espacio
+                        dedicado completamente a la exhibición de banners, obras
+                        realizadas en su mayoría en la disciplina del tatuaje,
+                        mismos que anteriormente solo ocupaban un espacio dentro
+                        de los estudios o exposiciones de tatuaje.
+                    </p>
+                </div>
+                <div
+                    class="w-full h-1/3 flex justify-end items-center gap-3 p-4"
+                >
+                    <p class="font-montserrat text-xl">visitantes</p>
+                    <span class="font-impact text-7xl md:text-[128px]"
+                        >+300</span
+                    >
+                </div>
+            </aside>
+            <aside
+                class="w-full xl:w-1/3 border-black border-y-8 xl:border-x-8"
+            >
+                <div id="videoContainer" class="relative">
+                    <video id="videoResume" class="opacity-70">
+                        <source
+                            src="../../public/videos/banner_fever_2023_resume.mp4"
+                        />
+                    </video>
+                    <div
+                        class="custom-controls absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]"
+                    >
+                        <button id="playButton" class="play-btn">
+                            <img
+                                src="../../public/images/icons/play-circle.png"
+                                class="w-24"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </aside>
+            <aside class="w-full xl:w-1/3 flex justify-center items-center p-2">
+                <img
+                    src="../../public/images/edition_2023/logo_2023.png"
+                    alt="Logotipo de Banner Fever Edición 2023"
+                    class="w-60 xl:w-96 h-auto"
+                    title="Logotipo de Banner Fever Edición 2023"
+                />
+            </aside>
+        </div>
 
-    <div class="w-full border-black border-b-8 bg-black">
-        <div class="w-full flex flex-wrap justify-center">
-            {
-                banners.map((element) => {
-                    return (
-                        <div
-                            class="banner w-1/2 md:w-1/3 xl:w-1/6 h-60 md:h-80 bg-black"
-                            data-id={element.id}
-                            data-instagram={element.instagram}
-                        >
-                            <div class="w-full h-5/6">
-                                <img
-                                    src={`../../public/images/banners_2023/${element.id}.jpg`}
-                                    alt={`Banner pintado por ${element.instagram}`}
-                                    class="w-full h-full object-cover"
-                                />
+        <div class="w-full border-black border-b-8 bg-black">
+            <div class="w-full flex flex-wrap justify-center">
+                {
+                    banners.map((element) => {
+                        return (
+                            <div
+                                class="banner w-1/2 md:w-1/3 xl:w-1/6 h-60 md:h-80 bg-black"
+                                data-id={element.id}
+                                data-instagram={element.instagram}
+                            >
+                                <div class="w-full h-5/6">
+                                    <img
+                                        src={`../../public/images/banners_2023/${element.id}.jpg`}
+                                        alt={`Banner pintado por ${element.instagram}`}
+                                        class="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <div class="w-full h-1/6 py-2 flex justify-start items-center">
+                                    <a
+                                        href={`https://www.instagram.com/${element.instagram}`}
+                                        target="_blank"
+                                        class="font-montserrat font-light underline underline-offset-4 text-white"
+                                        style="text-decoration-thickness: 1px;"
+                                        title={`Explora el trabajo de ${element.instagram} desde su cuenta oficial`}
+                                    >
+                                        @{element.instagram}
+                                    </a>
+                                </div>
                             </div>
-                            <div class="w-full h-1/6 py-2 flex justify-start items-center">
-                                <a
-                                    href={`https://www.instagram.com/${element.instagram}`}
-                                    target="_blank"
-                                    class="font-montserrat font-light underline underline-offset-4 text-white"
-                                    style="text-decoration-thickness: 1px;"
-                                    title={`Explora el trabajo de ${element.instagram} desde su cuenta oficial`}
-                                >
-                                    @{element.instagram}
-                                </a>
-                            </div>
-                        </div>
-                    );
-                })
-            }
+                        );
+                    })
+                }
+            </div>
         </div>
     </div>
 </section>
