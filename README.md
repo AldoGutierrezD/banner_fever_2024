@@ -1,10 +1,10 @@
 # **🚩 Banner Fever**
 
-![Project Screenshot](web-screenshot.jpeg)
+![Project Screenshot](web-2024-screenshot.jpeg)
 
 ---
 
-## About this project
+## 👨‍💻 About this project
 
 Banner Fever is a banner exhibition, a traditional element of the tattoo. Each year a new edition is held, in which more than 60 artists from different disciplines participate.
 
