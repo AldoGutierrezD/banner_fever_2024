@@ -150,8 +150,10 @@ import banners from "../data/banners_2023.json";
 
 <script>
     //VIDEO
-    const video = document.getElementById("videoResume");
-    const playButton = document.getElementById("playButton");
+    const video = document.getElementById("videoResume") as HTMLVideoElement;
+    const playButton = document.getElementById(
+        "playButton",
+    ) as HTMLButtonElement;
     const iconPlay = playButton.querySelector("img");
 
     playButton.addEventListener("click", () => {
