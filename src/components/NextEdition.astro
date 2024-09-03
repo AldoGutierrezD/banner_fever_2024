@@ -71,7 +71,7 @@ let count = 0;
                         >
                             <img
                                 src={`../../public/images/activities/${act.image}`}
-                                alt=""
+                                alt={`Icono para representar la actividad: ${act.title}`}
                                 class="w-16 md:w-36 h-auto object-contain hidden md:block"
                             />
                             <div class="w-full">
@@ -104,12 +104,15 @@ let count = 0;
                 colaborators.map((colab) => {
                     return (
                         <li>
-                            <a href={colab.link} target="_blank">
+                            <a
+                                href={colab.link}
+                                target="_blank"
+                                title={`Conoce más sobre ${colab.name}`}
+                            >
                                 <img
                                     src={`../../public/images/collaborators/${colab.image}`}
-                                    alt=""
+                                    alt={`Logotipo de ${colab.name}`}
                                     class="w-32"
-                                    title={colab.name}
                                 />
                             </a>
                         </li>
