@@ -57,16 +57,14 @@ import banners from "../data/banners_2023.json";
             >
                 <div id="videoContainer" class="relative">
                     <video id="videoResume" class="opacity-70">
-                        <source
-                            src="../../public/videos/banner_fever_2023_resume.mp4"
-                        />
+                        <source src="/videos/banner_fever_2023_resume.mp4" />
                     </video>
                     <div
                         class="custom-controls absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]"
                     >
                         <button id="playButton" class="play-btn">
                             <img
-                                src="../../public/images/icons/play-circle.png"
+                                src="/images/icons/play-circle.png"
                                 class="w-24"
                             />
                         </button>
@@ -75,7 +73,7 @@ import banners from "../data/banners_2023.json";
             </aside>
             <aside class="w-full xl:w-1/3 flex justify-center items-center p-2">
                 <img
-                    src="../../public/images/edition_2023/logo_2023.png"
+                    src="/images/edition_2023/logo_2023.png"
                     alt="Logotipo de Banner Fever Edición 2023"
                     class="w-60 xl:w-96 h-auto"
                     title="Logotipo de Banner Fever Edición 2023"
@@ -95,7 +93,7 @@ import banners from "../data/banners_2023.json";
                             >
                                 <div class="w-full h-5/6">
                                     <img
-                                        src={`../../public/images/banners_2023/${element.id}.jpg`}
+                                        src={`/images/banners_2023/${element.id}.jpg`}
                                         alt={`Banner pintado por ${element.instagram}`}
                                         class="w-full h-full object-cover"
                                     />
