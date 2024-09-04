@@ -1,14 +1,22 @@
 [
     {
         "id": 1,
-        "title": "CHARLA SOBRE BANNERS",
-        "description": "FAVIO MORALES",
+        "title": "ARTISTAS INVITADOS NOS COMPARTEN SU CONOCIMIENTO Y EXPERIENCIAS AL TRABAJAR UN BANNER",
+        "description": "ARTISTAS POR CONFIRMAR",
+        "date": "DIA DEL EVENTO",
+        "subtitle": "CHARLA SOBRE BANNERS",
+        "image": "charla_banners.png"
+    },
+    {
+        "id": 2,
+        "title": "APRENDE EL PROCESO PARA PRODUCIR UN BANNER",
+        "description": "FAVIO MORALES Y NAHUAL",
         "date": "5 y 6 OCT.",
         "subtitle": "TALLER DE PRODUCCION DE BANNERS",
         "image": "favio_morales.png"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "PRESENTACION EN VIVO SOBRE LA TECNICA DEL TURFTING",
         "description": "JACQUELINE LANDEROS",
         "date": "DIA DEL EVENTO",
@@ -16,15 +24,15 @@
         "image": "turfting.png"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "PRACTICA EN VIVO SOBRE LA TECNICA DE AEROGRAFIA",
-        "description": "PROXIMAMENTE",
+        "description": "DESASTRE LOPEZ",
         "date": "DIA DEL EVENTO",
         "subtitle": "DEMOSTRACION DE AEROGRAFO",
         "image": "aerografia.png"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "PINCHADA DE DISCOS DE VINIL",
         "description": "DJ NEAR FT DJ RAYO DE JALISCO",
         "date": "DIA DEL EVENTO",
@@ -32,7 +40,7 @@
         "image": "near_rayo.png"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "MATERIAL DE DIBUJO, TATUAJE, PINTURA, Y MAS",
         "description": "MOLOTOV, PRISMA COLOR, DINAMYC, RADIANT",
         "date": "DIA DEL EVENTO",
@@ -40,7 +48,7 @@
         "image": "rifa_materiales.png"
     },
     {
-        "id": 6,
+        "id": 7,
         "title": "DESCUENTOS EN MATERIALES PARA LA PRODUCCION DE BANNERS",
         "description": "HERMANOS ALDAMA 206, CENTRO",
         "date": "HOY - VIERNES 8 DE NOVIEMBRE",

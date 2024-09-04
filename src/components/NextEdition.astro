@@ -81,9 +81,9 @@ let count = 0;
                                     class="w-16 md:w-36 h-auto object-contain hidden md:block"
                                 />
                                 <div class="w-full">
-                                    <h6 class="font-montserrat font-semibold text-base md:text-xl">
+                                    <h5 class="font-montserrat font-semibold text-base md:text-xl">
                                         {act.title}
-                                    </h6>
+                                    </h5>
                                     <p class="font-montserrat font-medium text-sm md:text-lg">
                                         {act.description}
                                     </p>
@@ -91,9 +91,9 @@ let count = 0;
                                         {act.date}
                                     </span>
 
-                                    <h4 class="font-montserrat font-bold text-lg md:text-4xl text-right mt-4">
+                                    <h6 class="font-montserrat font-bold text-lg md:text-4xl text-right mt-4">
                                         {act.subtitle}
-                                    </h4>
+                                    </h6>
                                 </div>
                             </li>
                         );
@@ -136,6 +136,7 @@ let count = 0;
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa del lugar del evento. Torre Andrade, León Guanajuato, México"
                 >
                 </iframe>
             </div>
@@ -150,7 +151,7 @@ let count = 0;
 </section>
 
 <style>
-    @media only screen and (min-width: 769px) {
+    @media only screen and (min-width: 1300px) {
         .date-text {
             transform: rotate(-180deg);
             writing-mode: vertical-lr;

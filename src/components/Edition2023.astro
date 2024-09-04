@@ -53,7 +53,7 @@ import banners from "../data/banners_2023.json";
                 </div>
             </aside>
             <aside
-                class="w-full xl:w-1/3 border-black border-y-8 xl:border-x-8"
+                class="w-full xl:w-1/3 border-black border-y-8 xl:border-x-8 bg-black flex justify-center items-center"
             >
                 <div id="videoContainer" class="relative">
                     <video id="videoResume" class="opacity-70">
@@ -62,10 +62,15 @@ import banners from "../data/banners_2023.json";
                     <div
                         class="custom-controls absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]"
                     >
-                        <button id="playButton" class="play-btn">
+                        <button
+                            id="playButton"
+                            class="play-btn"
+                            aria-label="Botón de play"
+                        >
                             <img
                                 src="/images/icons/play-circle.png"
                                 class="w-24"
+                                alt="Botón de play para ver el video"
                             />
                         </button>
                     </div>
@@ -93,9 +98,10 @@ import banners from "../data/banners_2023.json";
                             >
                                 <div class="w-full h-5/6">
                                     <img
-                                        src={`/images/banners_2023/${element.id}.jpg`}
+                                        src={`/images/banners_2023/${element.id}.webp`}
                                         alt={`Banner pintado por ${element.instagram}`}
                                         class="w-full h-full object-cover"
+                                        loading="lazy"
                                     />
                                 </div>
                                 <div class="w-full h-1/6 py-2 flex justify-start items-center">
