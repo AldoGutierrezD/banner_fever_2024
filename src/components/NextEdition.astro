@@ -59,15 +59,15 @@ let count = 0;
             <p class="font-montserrat font-medium text-base xl:text-lg p-6">
                 Después del gran recibimiento en su 1era edición, Banner Fever
                 llega con una nueva entrega tomando como temática principal el <span
-                    class="text-primary font-bold">Día de muertos</span
+                    class="text-primary font-bold">Día de Muertos</span
                 >, festividad mexicana que rinde culto a nuestros difuntos.
             </p>
 
             <p class="font-montserrat font-medium text-base xl:text-lg p-6">
                 Te compartimos el itinerario de las actividades que tendremos a
-                lo largo del día, así como fecha y ubicación. Será una edición
-                llena de muchas sorpresas, grandes artistias, variedad de obras
-                y buen ambiente, te esperamos!
+                lo largo del día, así como fecha y ubicación. ¡Será una edición
+                llena de muchas sorpresas, grandes artistas, variedad de obras y
+                buen ambiente, te esperamos!
             </p>
 
             <h5 class="font-montserrat font-bold text-2xl p-6">ACTIVIDADES</h5>
@@ -80,12 +80,12 @@ let count = 0;
 
                         return (
                             <li
-                                class={`w-full ${bgColorClass} p-6 flex gap-4 fade-in`}
+                                class={`w-full ${bgColorClass} p-6 flex flex-col md:flex-row gap-4 fade-in`}
                             >
                                 <img
                                     src={`/images/activities/${act.image}`}
                                     alt={`Icono para representar la actividad: ${act.title}`}
-                                    class="w-16 md:w-36 h-auto object-contain hidden md:block"
+                                    class="w-24 md:w-36 h-auto object-contain"
                                 />
                                 <div class="w-full">
                                     <h5 class="font-montserrat font-semibold text-base md:text-xl">

@@ -101,7 +101,6 @@ import banners from "../data/banners_2023.json";
                                         src={`/images/banners_2023/${element.id}.webp`}
                                         alt={`Banner pintado por ${element.instagram}`}
                                         class="w-full h-full object-cover"
-                                        loading="lazy"
                                     />
                                 </div>
                                 <div class="w-full h-1/6 py-2 flex justify-start items-center">
@@ -176,15 +175,5 @@ import banners from "../data/banners_2023.json";
             video.pause();
             playButton.appendChild(iconPlay);
         }
-    });
-
-    //BANNER MODAL
-    const bannerElements = document.querySelectorAll(".banner");
-
-    bannerElements.forEach((banner) => {
-        banner.addEventListener("click", () => {
-            let id = banner.dataset.id;
-            let instagram = banner.dataset.instagram;
-        });
     });
 </script>
