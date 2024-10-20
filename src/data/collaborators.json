@@ -1,24 +1,36 @@
 [
     {
         "id": 1,
+        "name": "Crime Boys Collective",
+        "link": "https://www.instagram.com/crimeboyscollective",
+        "image": "crime_boys_collective.png"
+    },
+    {
+        "id": 2,
+        "name": "Luna María",
+        "link": "https://www.instagram.com/luna_maria_clothing",
+        "image": "luna_maria.png"
+    },
+    {
+        "id": 3,
         "name": "Harto Fuego",
         "link": "https://www.instagram.com/hartofuego",
         "image": "harto_fuego.png"
     },
     {
-        "id": 2,
+        "id": 4,
         "name": "Chava Tattoo",
-        "link": "#",
+        "link": "https://www.instagram.com/chavicoshdez11",
         "image": "salvador_hernandez.png"
     },
     {
-        "id": 3,
+        "id": 5,
         "name": "Stock de Papel",
         "link": "https://www.instagram.com/stockdepapel",
         "image": "stock_papel.png"
     },
     {
-        "id": 4,
+        "id": 6,
         "name": "Torre Andrade",
         "link": "https://www.instagram.com/torre.andrade",
         "image": "torre_andrade.png"

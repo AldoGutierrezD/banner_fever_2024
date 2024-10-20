@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "ARTISTAS INVITADOS NOS COMPARTEN SU CONOCIMIENTO Y EXPERIENCIAS AL TRABAJAR UN BANNER",
-        "description": "FAVIO MORALES, NAHUAL, ?",
+        "description": "FAVIO MORALES, NAGUAL, ?",
         "date": "DIA DEL EVENTO",
         "subtitle": "CHARLA SOBRE BANNERS",
         "image": "charla_banners.png"
@@ -34,9 +34,9 @@
     {
         "id": 5,
         "title": "PINCHADA DE DISCOS DE VINIL",
-        "description": "DJ NEAR FT DJ RAYO DE JALISCO",
+        "description": "MUSICA EN VIVO DURANTE TODO EL EVENTO",
         "date": "DIA DEL EVENTO",
-        "subtitle": "DJ NEAR FT DJ RAYO DE JALISCO",
+        "subtitle": "DJ VESPA, DJ RAYO DE JALISCO, DJ HUNDER, DJ NEAR",
         "image": "near_rayo.png"
     },
     {
