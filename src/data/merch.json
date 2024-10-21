@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Luna María",
+        "description": "Second Hand, Ropa y Accesorios Customizados",
+        "link": "https://www.instagram.com/luna_maria_clothing",
+        "image": "luna_maria.png"
+    },
+    {
+        "id": 2,
+        "name": "Leaves & Leather",
+        "description": "Accesorios hechos a mano en cuero y piel genuina",
+        "link": "https://www.instagram.com/leavesandleather",
+        "image": "leaves_and_leather.png"
+    },
+    {
+        "id": 3,
+        "name": "Sirk",
+        "description": "Marca de ropa urbana",
+        "link": "https://www.instagram.com/sirk_teve",
+        "image": "sirk.png"
+    },
+    {
+        "id": 4,
+        "name": "Chica Latina",
+        "description": "Ropa y Accesorios Personalizados",
+        "link": "https://www.instagram.com/chica_latina96",
+        "image": "chica_latina.png"
+    }
+]

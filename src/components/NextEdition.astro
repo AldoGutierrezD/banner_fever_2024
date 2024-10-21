@@ -1,6 +1,7 @@
 ---
 import activities from "../data/activities.json";
 import colaborators from "../data/collaborators.json";
+import merch from "../data/merch.json";
 
 const bgColors = ["bg-accent", "bg-secondary", "bg-primary"];
 let rowsBgColors = bgColors.length;
@@ -102,6 +103,39 @@ let count = 0;
                                         {act.subtitle}
                                     </h6>
                                 </div>
+                            </li>
+                        );
+                    })
+                }
+            </ul>
+
+            <h5 class="font-montserrat font-bold text-2xl mt-8 p-6">
+                ZONA DE MERCHANDISING
+            </h5>
+
+            <p class="font-montserrat font-medium text-base xl:text-lg p-6">
+                Explora nuestra zona de merch, donde encontrarás ropa,
+                accesorios, productos personalizados, y artíuclos exclusivos de
+                distintas marcas y artistas locales. ¡Aprovecha la oportunidad
+                de llevarte piezas únicas y llenas de estilo!
+            </p>
+
+            <ul class="flex justify-center items-center gap-4">
+                {
+                    merch.map((item) => {
+                        return (
+                            <li>
+                                <a
+                                    href={item.link}
+                                    target="_blank"
+                                    title={item.description}
+                                >
+                                    <img
+                                        src={`/images/merch/${item.image}`}
+                                        alt={`Logotipo de ${item.name}`}
+                                        class="w-32"
+                                    />
+                                </a>
                             </li>
                         );
                     })
