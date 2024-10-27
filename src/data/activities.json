@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "title": "ARTISTAS INVITADOS NOS COMPARTEN SU CONOCIMIENTO Y EXPERIENCIAS AL TRABAJAR UN BANNER",
-        "description": "FAVIO MORALES, NAGUAL, ?",
+        "title": "CONVERSATORIO SOBRE EL LIBRO 'MEMORIAS CORPORALES, DIALOGOS CON LA HISTORIA: TATUAJE Y TATUADORES' Y EL OFICIO DEL TATUAJE",
+        "description": "GISELA MUCIÑO Y NAGUAL DESDE CDMX",
         "date": "DIA DEL EVENTO",
-        "subtitle": "CHARLA SOBRE BANNERS",
-        "image": "charla_banners.png"
+        "subtitle": "PRESENTACIÓN DEL LIBRO Y CHARLA SOBRE TATUAJE",
+        "image": "memorias-corporales-dialogos-con-la-historia-tatuaje-y-tatuadores.jpg"
     },
     {
         "id": 2,
@@ -36,7 +36,7 @@
         "title": "PINCHADA DE DISCOS DE VINIL",
         "description": "MUSICA EN VIVO DURANTE TODO EL EVENTO",
         "date": "DIA DEL EVENTO",
-        "subtitle": "DJ VESPA, DJ RAYO DE JALISCO, DJ HUNDER, DJ NEAR",
+        "subtitle": "DJ VESPA(CDMX), DJ RAYO DE JALISCO, DJ HUNDER, DJ NEAR",
         "image": "near_rayo.png"
     },
     {
