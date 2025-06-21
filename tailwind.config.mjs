@@ -5,7 +5,9 @@ export default {
 		extend: {
 			fontFamily: {
 				'impact': ['Impact'],
-				'montserrat': ['Montserrat']
+				'montserrat': ['Montserrat'],
+				'migko': ['Migko'],
+				'beckan': ['Beckan']
 			},
 			colors: {
 				'primary': '#fa6c06',

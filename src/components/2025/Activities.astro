@@ -1,0 +1,60 @@
+---
+const activities = [
+    {
+        id: 1,
+        color: "#f6b300",
+        titulo: "Banner Fever Magazine",
+        descripcion:
+            "Presentación editorial de la revista Banner Fever Magazine, con la participación de Japo WS, Don Nervio y más por confirmar",
+    },
+    {
+        id: 2,
+        color: "#078f81",
+        titulo: "Aerografía por Japo WS y Marco Ojeda WS",
+        descripcion: "Demostración de aerografía por Japo WS y Marco Ojeda WS",
+    },
+    {
+        id: 3,
+        color: "#f6b300",
+        titulo: "Tatuaje Tebori",
+        descripcion: "Demostración del tatuaje Tebori por Javs",
+    },
+    {
+        id: 4,
+        color: "#078f81",
+        titulo: "DJ sets en vivo",
+        descripcion:
+            "Sesión de música en vinilos por Dj Near, Dj Rayo y Hunder",
+    },
+];
+---
+
+<section class="w-full mt-24 flex flex-col justify-center items-center">
+    <h4 class="font-migko text-4xl font-semibold text-center">ACTIVIDADES</h4>
+    <div class="w-full md:w-2/3 mt-4">
+        <ul>
+            {
+                activities.map((element) => {
+                    return (
+                        <li class="my-3 w-full flex justify-start gap-3">
+                            <div class="w-auto">
+                                <div
+                                    class="w-5 h-5 rounded-full mt-1"
+                                    style={`background-color: ${element.color}`}
+                                />
+                            </div>
+                            <div class="w-auto">
+                                <span class="font-montserrat font-semibold text-lg md:text-xl">
+                                    {element.titulo}
+                                </span>
+                                <p class="font-montserrat font-light text-base md:text-lg">
+                                    {element.descripcion}
+                                </p>
+                            </div>
+                        </li>
+                    );
+                })
+            }
+        </ul>
+    </div>
+</section>
