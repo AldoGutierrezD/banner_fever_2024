@@ -1,0 +1,66 @@
+---
+const sponsors = [
+    {
+        id: 1,
+        logo: "crime_boys_collective.png",
+        nombre: "Crime Boys Collective",
+        link: "https://www.facebook.com/search/top?q=crime%20boys%20collective",
+    },
+    {
+        id: 2,
+        logo: "luna_maria.png",
+        nombre: "Luna María Clothing",
+        link: "https://www.instagram.com/luna_maria_clothing/",
+    },
+    {
+        id: 3,
+        logo: "stock_papel.png",
+        nombre: "Stock de Papel",
+        link: "https://www.instagram.com/stockdepapel/",
+    },
+    {
+        id: 4,
+        logo: "chava_tattoo.png",
+        nombre: "Chava Tattoo Shop",
+        link: "https://www.instagram.com/chavicoshdez11/",
+    },
+];
+---
+
+<section class="w-full mt-24 flex flex-col justify-center items-center">
+    <h4 class="font-migko text-4xl font-semibold text-center">
+        PATROCINADORES
+    </h4>
+    <div class="w-full md:w-2/3 mt-10">
+        <div
+            class="flex flex-wrap justify-center items-center lg:flex-nowrap gap-8"
+        >
+            {
+                sponsors.map((element) => {
+                    return (
+                        <a
+                            href={element.link}
+                            target="_blank"
+                            title={element.nombre}
+                        >
+                            <img
+                                src={`/images/edition_2025/patrocinadores/${element.logo}`}
+                                alt={`Logotipo del patrocinador ${element.nombre}`}
+                                class="w-auto h-28"
+                            />
+                        </a>
+                    );
+                })
+            }
+        </div>
+        <div class="flex justify-center items-center mt-14">
+            <a
+                href="https://www.instagram.com/banner.fever/"
+                target="_blank"
+                class="font-montserrat font-semibold text-base lg:text-xl text-[#9d1b15] underline decoration-wavy underline-offset-4"
+            >
+                Si deseas ser patrocinador escríbenos a @banner.fever
+            </a>
+        </div>
+    </div>
+</section>
