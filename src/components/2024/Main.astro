@@ -1,7 +1,8 @@
 ---
-import activities from "../data/activities.json";
-import colaborators from "../data/collaborators.json";
-import merch from "../data/merch.json";
+import activities from "../../data/2024/activities.json";
+import colaborators from "../../data/2024/collaborators.json";
+import merch from "../../data/2024/merch.json";
+import banners from "../../data/2025/banners.json";
 
 const bgColors = ["bg-accent", "bg-secondary", "bg-primary"];
 let rowsBgColors = bgColors.length;
@@ -195,6 +196,41 @@ let count = 0;
         <span class="text-white text-2xl">+</span>
         <span class="text-white text-2xl">+</span>
         <span class="text-white text-2xl">+</span>
+    </div>
+
+    <div id="banners" class="w-full border-black border-b-8 bg-black">
+        <div class="w-full flex flex-wrap justify-center">
+            {
+                banners.map((element) => {
+                    return (
+                        <div
+                            class="banner w-1/2 md:w-1/3 xl:w-1/6 h-60 md:h-80 bg-black"
+                            data-id={element.id}
+                            data-instagram={element.instagram}
+                        >
+                            <div class="w-full h-5/6">
+                                <img
+                                    src={`/images/edition_2025/banners/${element.id}.webp`}
+                                    alt={`Banner pintado por ${element.instagram}`}
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div class="w-full h-1/6 py-2 flex justify-start items-center">
+                                <a
+                                    href={`https://www.instagram.com/${element.instagram}`}
+                                    target="_blank"
+                                    class="font-montserrat font-light underline underline-offset-4 text-white"
+                                    style="text-decoration-thickness: 1px;"
+                                    title={`Explora el trabajo de ${element.instagram} desde su cuenta oficial`}
+                                >
+                                    @{element.instagram}
+                                </a>
+                            </div>
+                        </div>
+                    );
+                })
+            }
+        </div>
     </div>
 </section>
 

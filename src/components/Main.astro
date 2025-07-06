@@ -1,0 +1,204 @@
+---
+import activities from "../data/activities.json";
+import colaborators from "../data/collaborators.json";
+import merch from "../data/merch.json";
+
+const bgColors = ["bg-accent", "bg-secondary-2025"];
+let rowsBgColors = bgColors.length;
+let count = 0;
+---
+
+<section id="proxima_edicion" class="w-full h-auto border-x-8 border-black">
+    <div class="w-full h-16 px-4 bg-black flex justify-between items-center">
+        <span class="text-white text-2xl">+</span>
+        <span class="text-white text-2xl">+</span>
+        <span class="text-white text-2xl">+</span>
+    </div>
+
+    <div class="w-full h-auto">
+        <div
+            class="w-full border-black border-b-8 text-center flex flex-col justify-between items-center"
+        >
+            <div>
+                <p
+                    class="font-montserrat font-bold text-base md:text-lg my-2 xl:my-6"
+                >
+                    EDICION 2025
+                </p>
+
+                <h4
+                    class="font-impact text-7xl md:text-[120px] xl:text-[168px] my-2 xl:my-6"
+                >
+                    16 NOV 25
+                </h4>
+            </div>
+
+            <p
+                class="font-montserrat font-bold text-base md:text-lg my-2 xl:my-6"
+            >
+                <span class="text-secondary-2025"
+                    >CALLE INDEPENDENCIA 115, CENTRO,</span
+                >
+                LEON GUANAJUATO,
+                <span class="text-accent-2025">MEXICO</span>
+            </p>
+        </div>
+
+        <div class="w-full border-black">
+            <div class="flex justify-center items-center gap-3 pt-2">
+                <span class="font-impact text-2xl md:text-7xl text-primary-2025"
+                    >BANNER</span
+                >
+                <img
+                    src="/images/logo-2025.png"
+                    alt="Logotipo de Banner Fever 2024 Edición Día de Muertos"
+                    class="w-24 md:w-32 xl:w-52"
+                />
+                <span
+                    class="font-impact text-2xl md:text-7xl text-secondary-2025"
+                    >FEVER</span
+                >
+            </div>
+
+            <h4 class="font-impact text-2xl xl:text-4xl mb-2 p-6 text-center">
+                BIENVENIDOS A LA <span class="text-primary-2025"
+                    >3ERA EDICION</span
+                > DE BANNER FEVER!
+            </h4>
+
+            <p class="font-montserrat font-medium text-base xl:text-lg p-6">
+                Este 16 de noviembre nos reunimos una vez más en el corazón de
+                León para celebrar el arte del banner y conectar con quienes lo
+                crean, lo admiran y lo viven. Te damos la bienvenida a una
+                edición que apuesta por el talento compartido y la fuerza visual
+                del trabajo hecho a mano. Más abajo encontrarás todo sobre
+                nuestras actividades, patrocinadores e información sobre el
+                evento.
+            </p>
+
+            <h5 class="font-montserrat font-bold text-2xl p-6">ACTIVIDADES</h5>
+
+            <ul>
+                {
+                    activities.map((act) => {
+                        const bgColorClass = bgColors[count];
+                        count = (count + 1) % rowsBgColors;
+
+                        return (
+                            <li
+                                class={`w-full ${bgColorClass} p-6 flex flex-col md:flex-row gap-4 fade-in`}
+                            >
+                                <img
+                                    src={`/images/edition_2025/activities/${act.image}`}
+                                    alt={`Icono para representar la actividad: ${act.title}`}
+                                    class="w-24 md:w-36 h-auto object-contain"
+                                />
+                                <div class="w-full">
+                                    <h5 class="font-montserrat font-semibold text-base md:text-xl">
+                                        {act.title}
+                                    </h5>
+                                    <p class="font-montserrat font-medium text-sm md:text-lg">
+                                        {act.description}
+                                    </p>
+                                    <span class="font-montserrat text-sm md:text-base">
+                                        {act.date}
+                                    </span>
+
+                                    <h6 class="font-montserrat font-bold text-lg md:text-4xl text-right mt-4">
+                                        {act.subtitle}
+                                    </h6>
+                                </div>
+                            </li>
+                        );
+                    })
+                }
+            </ul>
+
+            <h5 class="font-montserrat font-bold text-2xl mt-8 p-6">
+                COLABORADORES
+            </h5>
+
+            <ul class="flex justify-center items-center gap-4">
+                {
+                    colaborators.map((colab) => {
+                        return (
+                            <li>
+                                <a
+                                    href={colab.link}
+                                    target="_blank"
+                                    title={`Conoce más sobre ${colab.name}`}
+                                >
+                                    <img
+                                        src={`/images/edition_2025/patrocinadores/${colab.image}`}
+                                        alt={`Logotipo de ${colab.name}`}
+                                        class="w-32"
+                                    />
+                                </a>
+                            </li>
+                        );
+                    })
+                }
+            </ul>
+
+            <div class="w-full mt-16 border-black border-t-8">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.818928918162!2d-101.68530101855126!3d21.119783934521433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf00155ae677%3A0x9a11511158166f80!2sCafeter%C3%ADa%20Almanegra%20Le%C3%B3n!5e0!3m2!1ses-419!2smx!4v1751760401023!5m2!1ses-419!2smx"
+                    class="w-full"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa del lugar del evento. Cafetería Almanegra, León Guanajuato, México"
+                >
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-16 px-4 bg-black flex justify-between items-center">
+        <span class="text-white text-2xl">+</span>
+        <span class="text-white text-2xl">+</span>
+        <span class="text-white text-2xl">+</span>
+    </div>
+</section>
+
+<style>
+    @media only screen and (min-width: 1300px) {
+        .date-text {
+            transform: rotate(-180deg);
+            writing-mode: vertical-lr;
+        }
+    }
+
+    .fade-in {
+        opacity: 0;
+        transform: translateY(80px);
+        transition:
+            opacity 0.6s ease-out,
+            transform 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+<script>
+    document.addEventListener("scroll", function () {
+        const elements = document.querySelectorAll(".fade-in");
+        const windowHeight = window.innerHeight;
+
+        elements.forEach((element) => {
+            const elementTop = element.getBoundingClientRect().top;
+
+            if (elementTop < windowHeight - 50) {
+                // El 50 es un margen para iniciar la animación un poco antes
+                element.classList.add("visible");
+            } else {
+                element.classList.remove("visible");
+            }
+        });
+    });
+</script>

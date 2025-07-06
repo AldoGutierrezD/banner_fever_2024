@@ -1,0 +1,282 @@
+---
+
+---
+
+<section
+    id="form"
+    class="w-full mt-4 flex flex-col justify-center items-center"
+>
+    <div class="w-full md:w-2/3 mt-4">
+        <form
+            id="formulario-contacto"
+            class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"
+        >
+            <div class="sm:col-span-3">
+                <label
+                    for="nombre"
+                    class="block text-sm/6 font-medium text-gray-900"
+                    >* Nombre y/o sobrenombre</label
+                >
+                <div class="mt-2">
+                    <input
+                        type="text"
+                        name="nombre"
+                        id="nombre"
+                        autocomplete="given-name"
+                        required
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#078f81] sm:text-sm/6"
+                    />
+                </div>
+            </div>
+
+            <div class="sm:col-span-3">
+                <label
+                    for="correo"
+                    class="block text-sm/6 font-medium text-gray-900"
+                    >Correo electrónico</label
+                >
+                <div class="mt-2">
+                    <input
+                        type="text"
+                        name="correo"
+                        id="correo"
+                        autocomplete="given-name"
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#078f81] sm:text-sm/6"
+                    />
+                </div>
+            </div>
+
+            <div class="col-span-full">
+                <label
+                    for="trayectoria"
+                    class="block text-sm/6 font-medium text-gray-900"
+                    >Cuéntanos brevemente tu trayectoria (tiempo tatuando,
+                    ciudades o países visitados, lugares donde has trabajado,
+                    dónde tatúas actualmente)</label
+                >
+                <div class="mt-2">
+                    <textarea
+                        name="trayectoria"
+                        id="trayectoria"
+                        rows="3"
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#078f81] sm:text-sm/6"
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="col-span-full">
+                <label
+                    for="tatuaje"
+                    class="block text-sm/6 font-medium text-gray-900"
+                    >* ¿Qué significa para ti el tatuaje?</label
+                >
+                <div class="mt-2">
+                    <textarea
+                        name="tatuaje"
+                        id="tatuaje"
+                        rows="3"
+                        required
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#078f81] sm:text-sm/6"
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="col-span-full">
+                <label
+                    for="pintura"
+                    class="block text-sm/6 font-medium text-gray-900"
+                    >* ¿Qué significa para ti la pintura?</label
+                >
+                <div class="mt-2">
+                    <textarea
+                        name="pintura"
+                        id="pintura"
+                        rows="3"
+                        required
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#078f81] sm:text-sm/6"
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="col-span-full">
+                <label
+                    for="reflexion"
+                    class="block text-sm/6 font-medium text-gray-900"
+                    >Puedes elaborar una reflexión acerca de tu trabajo, del
+                    tatuaje o la pintura (no obligatorio)</label
+                >
+                <div class="mt-2">
+                    <textarea
+                        name="reflexion"
+                        id="reflexion"
+                        rows="3"
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#078f81] sm:text-sm/6"
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="sm:col-span-3">
+                <label
+                    for="imagenes"
+                    class="block text-sm/6 font-medium text-gray-900"
+                    >Sube de 1 hasta 5 fotografías de tu trabajo (tatuaje,
+                    pintura, dibujo)
+                </label>
+                <p class="block text-sm/6 font-medium text-gray-900">
+                    * Adjunta una fotografía extra con el comprobante de pago.
+                    En caso de no poder subir la imagen también puedes enviarla
+                    a la cuenta oficial del evento <a
+                        href="https://www.instagram.com/banner.fever/"
+                        target="_blank">@banner.fever</a
+                    >
+                </p>
+                <div class="mt-2">
+                    <input
+                        type="file"
+                        id="imagenes"
+                        multiple
+                        accept="image/*"
+                        autocomplete="given-name"
+                        required
+                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#078f81] sm:text-sm/6"
+                    />
+                </div>
+            </div>
+
+            <!-- Campos ocultos para las URLs -->
+            <input type="hidden" name="imagen_url_1" id="imagen_url_1" />
+            <input type="hidden" name="imagen_url_2" id="imagen_url_2" />
+            <input type="hidden" name="imagen_url_3" id="imagen_url_3" />
+            <input type="hidden" name="imagen_url_4" id="imagen_url_4" />
+            <input type="hidden" name="imagen_url_5" id="imagen_url_5" />
+            <input type="hidden" name="imagen_url_6" id="imagen_url_6" />
+
+            <div
+                class="mt-4 col-span-full flex items-center justify-end gap-x-6"
+            >
+                <button
+                    type="submit"
+                    class="rounded-md bg-[#078f81] px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-[#17645c] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#078f81]"
+                    >Enviar registro</button
+                >
+            </div>
+        </form>
+    </div>
+</section>
+
+<script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+></script>
+<script
+    type="text/javascript"
+    src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script is:inline>
+    document.addEventListener("DOMContentLoaded", function () {
+        const PUBLIC_KEY = "Iib_QHrZi70v7WhuZ"; //JML2dabWY27DykhL8
+        const SERVICE_ID = "service_2hdf3xt"; //service_6ir8sln
+        const TEMPLATE_ID = "template_ywrzmpn"; //template_fo4gq7d
+        const CLOUD_API_KEY = "695735134493844";
+        const CLOUD_NAME = "admindev";
+        const UPLOAD_PRESET = "bf2025_form";
+
+        emailjs.init(PUBLIC_KEY);
+
+        const form = document.getElementById("formulario-contacto");
+        form.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const filesInput = document.getElementById("imagenes");
+            const files = filesInput.files;
+
+            if (!files || files.length === 0 || files.length > 6) {
+                swal(
+                    "Mensaje",
+                    "Debes subir entre 1 y 6 imágenes, estas serán utilizadas para el fanzine conmemorativo del evento",
+                    "info",
+                );
+                return;
+            }
+
+            const urls = [];
+
+            for (let i = 0; i < files.length; i++) {
+                const formData = new FormData();
+                formData.append("file", files[i]);
+                formData.append("upload_preset", UPLOAD_PRESET);
+
+                try {
+                    const res = await fetch(
+                        `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`,
+                        {
+                            method: "POST",
+                            body: formData,
+                        },
+                    );
+
+                    const data = await res.json();
+                    if (data.secure_url) {
+                        urls.push(data.secure_url);
+                        const hiddenInput = document.getElementById(
+                            `imagen_url_${i + 1}`,
+                        );
+                        if (hiddenInput) hiddenInput.value = data.secure_url;
+                    } else {
+                        swal(
+                            "Error",
+                            "Hubo un error al subir la imagen, verifica e intenta de nuevo",
+                            "error",
+                        );
+                        return;
+                    }
+                } catch (err) {
+                    console.error("Error al subir imagen:", err);
+                    swal(
+                        "Error",
+                        "Hubo un error al subir las imágenes, verifica e intenta de nuevo",
+                        "error",
+                    );
+                    return;
+                }
+            }
+
+            const data = {
+                nombre: form.nombre.value,
+                correo: form.correo.value,
+                trayectoria: form.trayectoria.value,
+                tatuaje: form.tatuaje.value,
+                pintura: form.pintura.value,
+                reflexion: form.reflexion.value,
+                time: new Date().toLocaleString(),
+                imagen_url_1: urls[0] || "",
+                imagen_url_2: urls[1] || "",
+                imagen_url_3: urls[2] || "",
+                imagen_url_4: urls[3] || "",
+                imagen_url_5: urls[4] || "",
+                imagen_url_6: urls[5] || "",
+            };
+
+            emailjs.send(SERVICE_ID, TEMPLATE_ID, data).then(
+                () => {
+                    swal(
+                        "Registro enviado",
+                        "Gracias por tu respuesta, nos complace contar con tu presencia en esta nueva edición de Banner Fever, mantente al tanto de las novedades del evento",
+                        "success",
+                    ).then(function () {
+                        form.reset();
+                        window.location.reload();
+                    });
+                },
+                (error) => {
+                    console.error("Error en EmailJS:", error);
+                    swal(
+                        "Error",
+                        "Algo salió mal, verifica e intenta de nuevo",
+                        "error",
+                    );
+                },
+            );
+        });
+    });
+</script>

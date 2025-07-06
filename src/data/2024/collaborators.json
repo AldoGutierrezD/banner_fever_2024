@@ -13,20 +13,26 @@
     },
     {
         "id": 3,
-        "name": "Chava Tattoo",
-        "link": "https://www.instagram.com/chavicoshdez11",
-        "image": "chava_tattoo.png"
+        "name": "Harto Fuego",
+        "link": "https://www.instagram.com/hartofuego",
+        "image": "harto_fuego.png"
     },
     {
         "id": 4,
+        "name": "Chava Tattoo",
+        "link": "https://www.instagram.com/chavicoshdez11",
+        "image": "salvador_hernandez.png"
+    },
+    {
+        "id": 5,
         "name": "Stock de Papel",
         "link": "https://www.instagram.com/stockdepapel",
         "image": "stock_papel.png"
     },
     {
-        "id": 5,
-        "name": "Cafetería Almanegra León",
-        "link": "https://www.instagram.com/cafeteriaalmanegra_leon/",
-        "image": "cafeteria_almanegra.png"
+        "id": 6,
+        "name": "Torre Andrade",
+        "link": "https://www.instagram.com/torre.andrade",
+        "image": "torre_andrade.png"
     }
 ]

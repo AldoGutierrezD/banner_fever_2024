@@ -1,0 +1,63 @@
+---
+const fases = [
+    {
+        id: 1,
+        color: "#f6b300",
+        titulo: "Llenado del formulario",
+        descripcion:
+            "Cada participante deberá completar el formulario de inscripción previamente compartido. Este paso es fundamental para asegurar tu lugar en el evento y debe llenarse con la mayor precisión posible. La información brindada nos servirá para realizar la revista que conmemora esta tercera edición.",
+    },
+    {
+        id: 2,
+        color: "#078f81",
+        titulo: "Realizar el pago",
+        descripcion:
+            "El costo por participante será de $500. Esta cuota incluye: Loneta curada para banner de 1 metro por 75 cm de ancho. Descuentos en Stock de Papel (Hermanos Aldama 226, Centro Histórico de León) donde recogerás tu loneta. Una revista de regalo “Banner Magazine”.",
+    },
+    {
+        id: 3,
+        color: "#f6b300",
+        titulo: "Entrega de Banners",
+        descripcion:
+            "Los banners deberán ser entregados en el mes de Octubre, siendo el día 31 el último día para recibir. La recepción para quienes viven en León es en Boulevard Nights Tattoo con dirección Boulevard Las Américas 821 colonia Andrade. Para los foráneos, enviar a la misma dirección. Será necesario enviar una foto en las mismas fechas para incluirla en la revista.",
+    },
+    {
+        id: 4,
+        color: "#078f81",
+        titulo: "Inaguración del evento",
+        descripcion:
+            "El gran día será el 16 de noviembre de 1:00 pm a 10:00 pm en el Calle Independencia 115, Centro, León de los Aldama. La inauguración contará con música en vivo, rifas, la exposición de decenas de banners, y muchas sorpresas más. Será una celebración llena de creatividad y talento, donde esperamos contar con tu presencia para disfrutar de este evento único.",
+    },
+];
+---
+
+<section class="w-full mt-24 flex flex-col justify-center items-center">
+    <h4 class="font-migko text-4xl font-semibold text-center">FASES</h4>
+    <div class="w-full md:w-2/3 mt-4">
+        <ul class="flex flex-wrap items-center justify-center gap-8">
+            {
+                fases.map((element) => {
+                    return (
+                        <li class="my-3 w-full lg:w-[31%]">
+                            <h6 class="font-impact text-center text-5xl p-3 border-t-4 border-black">
+                                FASE {element.id}
+                            </h6>
+                            <p
+                                class="font-montserrat  text-center font-light p-4 h-[300px] md:h-80"
+                                style={`border: 3px solid ${element.color}`}
+                            >
+                                {element.descripcion}
+                            </p>
+                            <h6
+                                class="font-montserrat font-semibold text-center p-3 text-xl"
+                                style={`background-color: ${element.color}`}
+                            >
+                                {element.titulo}
+                            </h6>
+                        </li>
+                    );
+                })
+            }
+        </ul>
+    </div>
+</section>
